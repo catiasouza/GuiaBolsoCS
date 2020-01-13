@@ -21,6 +21,11 @@
 		75DA723223C8C10F00E7292C /* ExtratoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA723123C8C10F00E7292C /* ExtratoViewController.swift */; };
 		75DA723423C8C5DD00E7292C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA723323C8C5DD00E7292C /* LoginViewController.swift */; };
 		75DA723723C8E54E00E7292C /* AccountRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA723623C8E54E00E7292C /* AccountRegistrationViewController.swift */; };
+		75DA723C23CCA57400E7292C /* DropDownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA723B23CCA57400E7292C /* DropDownButton.swift */; };
+		75DA723E23CCA58A00E7292C /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA723D23CCA58A00E7292C /* DropDownView.swift */; };
+		75DA724123CCA5AD00E7292C /* DropDownProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA724023CCA5AD00E7292C /* DropDownProtocol.swift */; };
+		75DA724423CCB91500E7292C /* ServiceRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA724323CCB91500E7292C /* ServiceRegistration.swift */; };
+		75DA724623CCBF6700E7292C /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA724523CCBF6700E7292C /* Account.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +66,11 @@
 		75DA723123C8C10F00E7292C /* ExtratoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtratoViewController.swift; sourceTree = "<group>"; };
 		75DA723323C8C5DD00E7292C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		75DA723623C8E54E00E7292C /* AccountRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRegistrationViewController.swift; sourceTree = "<group>"; };
+		75DA723B23CCA57400E7292C /* DropDownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownButton.swift; sourceTree = "<group>"; };
+		75DA723D23CCA58A00E7292C /* DropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownView.swift; sourceTree = "<group>"; };
+		75DA724023CCA5AD00E7292C /* DropDownProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownProtocol.swift; sourceTree = "<group>"; };
+		75DA724323CCB91500E7292C /* ServiceRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRegistration.swift; sourceTree = "<group>"; };
+		75DA724523CCBF6700E7292C /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +122,8 @@
 		75DA71F923C8AFF200E7292C /* GuiaBolsoCS */ = {
 			isa = PBXGroup;
 			children = (
+				75DA723A23CCA54B00E7292C /* ViewModel */,
+				75DA723923CCA52800E7292C /* Model */,
 				75DA723523C8DD4500E7292C /* Controller */,
 				75DA71FA23C8AFF200E7292C /* AppDelegate.swift */,
 				75DA71FC23C8AFF200E7292C /* SceneDelegate.swift */,
@@ -160,6 +172,33 @@
 			children = (
 			);
 			path = DropDown;
+			sourceTree = "<group>";
+		};
+		75DA723923CCA52800E7292C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				75DA724023CCA5AD00E7292C /* DropDownProtocol.swift */,
+				75DA724523CCBF6700E7292C /* Account.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		75DA723A23CCA54B00E7292C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				75DA724223CCB8F700E7292C /* Service */,
+				75DA723B23CCA57400E7292C /* DropDownButton.swift */,
+				75DA723D23CCA58A00E7292C /* DropDownView.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		75DA724223CCB8F700E7292C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				75DA724323CCB91500E7292C /* ServiceRegistration.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,8 +332,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75DA724123CCA5AD00E7292C /* DropDownProtocol.swift in Sources */,
+				75DA723E23CCA58A00E7292C /* DropDownView.swift in Sources */,
 				75DA71FF23C8AFF200E7292C /* ViewController.swift in Sources */,
 				75DA723723C8E54E00E7292C /* AccountRegistrationViewController.swift in Sources */,
+				75DA724423CCB91500E7292C /* ServiceRegistration.swift in Sources */,
+				75DA723C23CCA57400E7292C /* DropDownButton.swift in Sources */,
 				75DA722E23C8B42400E7292C /* RegisterViewController.swift in Sources */,
 				75DA723023C8BCBD00E7292C /* ListaContaViewController.swift in Sources */,
 				75DA723223C8C10F00E7292C /* ExtratoViewController.swift in Sources */,
@@ -302,6 +345,7 @@
 				75DA71FB23C8AFF200E7292C /* AppDelegate.swift in Sources */,
 				75DA71FD23C8AFF200E7292C /* SceneDelegate.swift in Sources */,
 				75DA720523C8AFF200E7292C /* GuiaBolsoCS.xcdatamodeld in Sources */,
+				75DA724623CCBF6700E7292C /* Account.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
