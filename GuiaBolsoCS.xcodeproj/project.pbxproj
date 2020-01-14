@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7563A95B23CE361F009AC6DF /* AccountDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7563A95A23CE361F009AC6DF /* AccountDelegate.swift */; };
 		75DA71FB23C8AFF200E7292C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA71FA23C8AFF200E7292C /* AppDelegate.swift */; };
 		75DA71FD23C8AFF200E7292C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA71FC23C8AFF200E7292C /* SceneDelegate.swift */; };
 		75DA71FF23C8AFF200E7292C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA71FE23C8AFF200E7292C /* ViewController.swift */; };
@@ -26,6 +27,9 @@
 		75DA724123CCA5AD00E7292C /* DropDownProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA724023CCA5AD00E7292C /* DropDownProtocol.swift */; };
 		75DA724423CCB91500E7292C /* ServiceRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA724323CCB91500E7292C /* ServiceRegistration.swift */; };
 		75DA724623CCBF6700E7292C /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA724523CCBF6700E7292C /* Account.swift */; };
+		75DA724B23CCCCEB00E7292C /* AccountViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA724A23CCCCEB00E7292C /* AccountViewCollectionViewCell.swift */; };
+		75DA724D23CCE19B00E7292C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA724C23CCE19B00E7292C /* Extension.swift */; };
+		75DA724F23CCE89800E7292C /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA724E23CCE89800E7292C /* Notification.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7563A95A23CE361F009AC6DF /* AccountDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDelegate.swift; sourceTree = "<group>"; };
 		75DA71F723C8AFF200E7292C /* GuiaBolsoCS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuiaBolsoCS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75DA71FA23C8AFF200E7292C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75DA71FC23C8AFF200E7292C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +76,9 @@
 		75DA724023CCA5AD00E7292C /* DropDownProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownProtocol.swift; sourceTree = "<group>"; };
 		75DA724323CCB91500E7292C /* ServiceRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRegistration.swift; sourceTree = "<group>"; };
 		75DA724523CCBF6700E7292C /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		75DA724A23CCCCEB00E7292C /* AccountViewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewCollectionViewCell.swift; sourceTree = "<group>"; };
+		75DA724C23CCE19B00E7292C /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		75DA724E23CCE89800E7292C /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +165,7 @@
 		75DA723523C8DD4500E7292C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				75DA724923CCCC1E00E7292C /* View */,
 				75DA71FE23C8AFF200E7292C /* ViewController.swift */,
 				75DA722D23C8B42400E7292C /* RegisterViewController.swift */,
 				75DA722F23C8BCBD00E7292C /* ListaContaViewController.swift */,
@@ -179,6 +188,9 @@
 			children = (
 				75DA724023CCA5AD00E7292C /* DropDownProtocol.swift */,
 				75DA724523CCBF6700E7292C /* Account.swift */,
+				75DA724C23CCE19B00E7292C /* Extension.swift */,
+				75DA724E23CCE89800E7292C /* Notification.swift */,
+				7563A95A23CE361F009AC6DF /* AccountDelegate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -199,6 +211,14 @@
 				75DA724323CCB91500E7292C /* ServiceRegistration.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		75DA724923CCCC1E00E7292C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				75DA724A23CCCCEB00E7292C /* AccountViewCollectionViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,19 +353,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				75DA724123CCA5AD00E7292C /* DropDownProtocol.swift in Sources */,
+				75DA724B23CCCCEB00E7292C /* AccountViewCollectionViewCell.swift in Sources */,
 				75DA723E23CCA58A00E7292C /* DropDownView.swift in Sources */,
 				75DA71FF23C8AFF200E7292C /* ViewController.swift in Sources */,
 				75DA723723C8E54E00E7292C /* AccountRegistrationViewController.swift in Sources */,
 				75DA724423CCB91500E7292C /* ServiceRegistration.swift in Sources */,
 				75DA723C23CCA57400E7292C /* DropDownButton.swift in Sources */,
+				75DA724D23CCE19B00E7292C /* Extension.swift in Sources */,
 				75DA722E23C8B42400E7292C /* RegisterViewController.swift in Sources */,
 				75DA723023C8BCBD00E7292C /* ListaContaViewController.swift in Sources */,
 				75DA723223C8C10F00E7292C /* ExtratoViewController.swift in Sources */,
 				75DA723423C8C5DD00E7292C /* LoginViewController.swift in Sources */,
 				75DA71FB23C8AFF200E7292C /* AppDelegate.swift in Sources */,
 				75DA71FD23C8AFF200E7292C /* SceneDelegate.swift in Sources */,
+				7563A95B23CE361F009AC6DF /* AccountDelegate.swift in Sources */,
 				75DA720523C8AFF200E7292C /* GuiaBolsoCS.xcdatamodeld in Sources */,
 				75DA724623CCBF6700E7292C /* Account.swift in Sources */,
+				75DA724F23CCE89800E7292C /* Notification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
